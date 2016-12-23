@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mRVcateggorie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progressBarPopular"
+        android:foregroundGravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="87dp"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/timeOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/placeholder"
+                android:text="Something went wrong."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/placeholder"
+                android:layout_marginTop="10dp"
+                android:text="Please try again later."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <ImageView
+                android:id="@+id/reload"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_refresh_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mRVcategories"
+        android:scrollbarSize="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:scrollbars="none"
+        android:paddingTop="3dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

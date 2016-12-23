@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.kartoo.app.drawer.AboutUs">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/Theme.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/mTVtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        style="@style/YellowToolbarTitle"
+        android:layout_alignBottom="@+id/mToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_below="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/logokartoo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beta 0.1.5"
+                android:id="@+id/textView3" />
+            <TextView
+                android:textColor="@color/title"
+                android:textSize="17dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A personalized mobile app that shows debit and credit card users the deals and promotions around Indonesia that matter."
+                android:id="@+id/textView4" />
+            <TextView
+                android:textColor="@color/main_textcolor"
+                android:textSize="17dp"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kartoo.co"
+                android:id="@+id/web" />
+
+            <View
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/hide5"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/disc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey15" />
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/view_all_textcolor"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like us on Facebook"
+                android:id="@+id/btnFb" />
+            <View
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/disc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey3" />
+            <TextView
+                android:textColor="@color/view_all_textcolor"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:id="@+id/Tnc" />
+            <View
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/disc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey3" />
+            <TextView
+                android:textColor="@color/view_all_textcolor"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:id="@+id/Privacy" />
+            <View
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/disc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey3" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

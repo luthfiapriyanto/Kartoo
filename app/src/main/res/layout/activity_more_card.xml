@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.kartoo.app.cards.suggestioncard.MoreCardActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ColorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:theme="@style/Theme.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/mTVtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cards"
+        style="@style/YellowToolbarTitle"
+        android:layout_alignBottom="@+id/mToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+    <RelativeLayout
+        android:layout_below="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/relativeLayout3"
+        android:background="#ffff">
+        <Spinner
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/sortbySpinner"
+            android:layout_width="150dp"
+            android:layout_height="28dp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/mRVcards"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
